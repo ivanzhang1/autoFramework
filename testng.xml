@@ -1,22 +1,19 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="IvanSuite" verbose="1" >
-  <test name="SmokeTest" >
-    <!-- 
-    <classes>
-       <class name="NoPackageTest" />
-    </classes> 
-    -->
-    <packages>
-    	<package name="com.rainivan.autoSelenium.autoFramework"></package>
-    </packages>
-  </test>
-  <!--  
+<suite name="IvanSuite" parallel="methods" thread-count="1" verbose="1" >
   <test name="Regression1">
     <classes>
-      <class name="test.sample.ParameterSample"/>
-      <class name="test.sample.ParameterTest"/>
+      <class name="businessTestCases.AppTest"/>
+      <!--  <class name="businessTestCases.SmokeTest"/>-->
     </classes>
   </test>
-  -->
+  <!-- 
+  <test name="SmokeTest" >
+ 	<packages>
+    	<package name="businessLibaray"></package>
+    	<package name="businessTestCases"></package>
+    </packages>
+  </test> 
+   -->
+ 
 </suite>
