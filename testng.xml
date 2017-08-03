@@ -3,8 +3,8 @@
 <suite name="IvanSuite" parallel="methods" thread-count="1" verbose="1" >
   <test name="Regression1">
     <classes>
-      <class name="businessTestCases.AppTest"/>
-      <!--  <class name="businessTestCases.SmokeTest"/>-->
+      <!-- <class name="businessTestCases.AppTest"/> -->
+      <class name="businessTestCases.SmokeTest"/>
     </classes>
   </test>
   <!-- 
@@ -17,3 +17,13 @@
    -->
  
 </suite>
+<!-- 
+// specify the test level parallel
+<suite name="Testng Parallel Test" parallel="tests" thread-count="5">
+//specify the class level parallel
+<suite name="Testng Parallel Test" parallel="classes" thread-count="5">
+//specify the method level parallel, method == @test
+<suite name="Testng Parallel Test" parallel="methods" thread-count="5">
+//specify the data provider parallel volume
+<suite name="Testng Parallel Test" parallel="methods" thread-count="5" data-provider-thread-count="20" >
+ -->
